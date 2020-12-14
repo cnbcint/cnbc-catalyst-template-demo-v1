@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Renders correctly 1`] = `
+.c0 .ion-icon {
+  color: inherit;
+}
+
+<span
+  class="c0"
+>
+  <ion-icon
+    class="ion-icon"
+    name="heart-outline"
+    size="small"
+  />
+</span>
+`;

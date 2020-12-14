@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlexList Renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  margin: -1rem;
+}
+
+.c0 > div {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+}
+
+@media (min-width:768px) {
+  .c0 > div {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (min-width:1280px) {
+  .c0 > div {
+    width: calc(33.333333333333336% - 2rem);
+  }
+}
+
+<div
+  class="c0"
+>
+  <div>
+    1
+  </div>
+  <div>
+    2
+  </div>
+  <div>
+    3
+  </div>
+</div>
+`;

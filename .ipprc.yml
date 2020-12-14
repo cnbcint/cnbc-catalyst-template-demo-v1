@@ -1,0 +1,22 @@
+input: public/images/responsive/origin
+output: public/images/responsive/output
+
+pipeline:
+  - pipe: resize
+    options:
+      breakpoints:
+        - name: mobile
+          resizeOptions:
+            width: 720
+        - name: tablet
+          resizeOptions:
+            width: 1280
+        - name: desktop
+          resizeOptions:
+            width: 1920
+      save: "[name]-[breakpoint][ext]"
+    then:
+      - pipe: convert
+        options:
+          format: jpg
+        save: "[source.name]-[breakpoint][ext]"

@@ -1,0 +1,12 @@
+@import "./common/cnbc_resets";
+@import "./common/variables";
+@import "./common/mixins";
+@import "./common/animate";
+@import "./common/helpers";
+
+#CNBCCatalystCampaign_Root {
+  min-height: 100vh;
+  font-family: "Proxima Nova", sans-serif;
+  overflow: hidden;
+  width: 100%;
+}

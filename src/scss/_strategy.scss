@@ -1,0 +1,40 @@
+&__strategy {
+  &__item {
+    padding: 5rem 2rem;
+    &__copy {
+      h3 {
+        margin: 1rem;
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  &__title {
+    h2 {
+      font-size: 6rem;
+      line-height: 7rem;
+      font-weight: bold;
+      max-width: 760px;
+    }
+    span {
+      font-size: 15rem;
+      line-height: 10rem;
+    }
+  }
+  p {
+    margin: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    max-width: 450px;
+  }
+  &__audience {
+    color: white;
+  }
+  &__content {
+    color: white;
+  }
+  &__experience {
+    color: white;
+  }
+}

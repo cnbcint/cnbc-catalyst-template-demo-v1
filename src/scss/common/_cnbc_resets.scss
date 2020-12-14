@@ -1,0 +1,159 @@
+/* CNBC wildcard resets */
+
+//All devices
+#MainContent {
+  .PageBuilder-page {
+    margin-bottom: 0;
+
+    &Row {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+
+    .Wildcard-wrapper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Desktop (legacy)
+.web {
+  #dart_wrapper_topbanner {
+    display: none;
+  }
+
+  #ribbon_spacer {
+    display: none !important;
+  }
+
+  .dart_wrapper > div {
+    margin-bottom: 0;
+  }
+
+  .cnbc-contents {
+    min-width: inherit;
+
+    .cnbc-body {
+      width: 100%;
+    }
+  }
+
+  .cols1 {
+    margin-top: 0;
+
+    .col1 {
+      width: 100% !important;
+      margin-top: 0 !important;
+    }
+
+    .adcom_wrapper {
+      margin-bottom: 0;
+    }
+  }
+
+  .pagehead {
+    display: none;
+  }
+
+  .story {
+    h1 {
+      display: none;
+    }
+
+    #article_deck {
+      display: none;
+    }
+
+    & > .wildcard {
+      margin-bottom: 0;
+    }
+
+    #article_body {
+      display: none;
+    }
+  }
+
+  #social_bar {
+    button.tabbing-button {
+      display: none;
+    }
+  }
+}
+
+// Mobile (legacy)
+.mobile-touch {
+  #cnbc-contents {
+    .adcom_wrapper {
+      margin-bottom: 0;
+    }
+
+    #cnbc-body {
+      padding-top: 0;
+
+      .ribbon_spacer {
+        display: none;
+      }
+
+      .story-top {
+        display: none;
+      }
+
+      & > article {
+        margin: 0;
+        padding: 0;
+
+        #article_body {
+          display: none;
+        }
+      }
+    }
+
+    // Share icons
+    #social_bar {
+      width: 100% !important;
+    }
+  }
+}
+
+.cnbc-contents ul li {
+  margin-bottom: 7px;
+}
+
+.story {
+  h1 {
+    display: none;
+  }
+  .wildcard {
+    margin-bottom: 0;
+  }
+}
+.cnbc-body {
+  width: 100%;
+}
+
+#article_body {
+  display: none;
+}
+
+//Mobile
+.PageBuilder-containerFluidWidths {
+  max-width: none !important;
+  padding: 0 !important;
+}
+.branding-menu-brandingMenuSticky {
+  pointer-events: none;
+}
+// -----
+#page_wildcard_header_footer .col1 {
+  width: 100%;
+  margin-top: -20px;
+}
+
+#ad-com-content-one {
+  margin-bottom: 0;
+}
+
+.TopBanner-container {
+  padding: 0;
+}

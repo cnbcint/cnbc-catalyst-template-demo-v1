@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideImageBlock Renders correctly 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.c2 {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+.c1 {
+  background: black;
+  background-image: url(http://localhost:8080/images/responsive/output/image05-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.c1 img {
+  margin: 0;
+}
+
+.c4 {
+  font-size: 1.2rem;
+  line-height: 125%;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding: 3rem;
+    width: 30%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    max-width: 400px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: 70%;
+  }
+
+  .c1 img {
+    display: none;
+  }
+}
+
+<div
+  class="c0 test"
+  style="margin-bottom: 0px;"
+>
+  <div
+    class="c1 test__image_container"
+  >
+    <picture>
+      <source
+        media="(min-width:1280px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-desktop.jpg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-tablet.jpg"
+      />
+      <img
+        loading="lazy"
+        src="http://localhost:8080/images/responsive/output/image05-mobile.jpg"
+      />
+    </picture>
+  </div>
+  <div
+    class="c2 test__content_block"
+  >
+    <div
+      class="c3 test__content_container"
+    >
+      <p
+        class="c4"
+      >
+        Testing content
+      </p>
+    </div>
+  </div>
+</div>
+`;

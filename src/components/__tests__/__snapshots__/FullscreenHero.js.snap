@@ -1,0 +1,306 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullscreenHero Renders 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+
+.c0 > * {
+  font-size: 1.125rem;
+  line-height: 140%;
+  color: black;
+}
+
+.c0 hr {
+  border-color: orange;
+  border-style: solid;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c0 img {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c0 p {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul {
+  list-style: disc !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul li {
+  list-style: disc !important;
+  margin: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+.c11 {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  z-index: 1;
+}
+
+.c11 img {
+  width: 34px;
+  margin: 10px auto;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: auto;
+  overflow: visible;
+  padding-bottom: 2rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-image: url(http://localhost:8080/images/header-mobile.jpg);
+}
+
+.c6 {
+  position: relative;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.c6 > * {
+  color: red;
+  text-align: center;
+}
+
+.c3 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0,0,0,.5);
+  z-index: 1;
+}
+
+.c9 {
+  border-color: orange !important;
+  background-color: orange;
+}
+
+.c7 {
+  display: inline-block !important;
+  font-size: 1.8rem;
+  line-height: 120%;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.c8 {
+  font-size: 1.5rem;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.c10 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.c5 {
+  position: relative;
+  z-index: 2;
+  max-width: 50% !important;
+}
+
+.c4 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  box-sizing: border-box;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .c0 hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    height: calc(100vh - 120px - 2rem);
+    overflow: hidden;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    background-image: url(http://localhost:8080/images/header-tablet.jpg);
+  }
+}
+
+@media (min-width:1280px) {
+  .c1 {
+    background-image: url(http://localhost:8080/images/header-desktop.jpg);
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    padding: 2rem;
+    width: 100%;
+    min-width: 640px;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: auto !important;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    padding: 1rem 2rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1 test"
+    >
+      <div
+        class="c2 test__video"
+      >
+        <div
+          class=""
+          style="padding: 0px; position: relative; height: 100%; transform: scale(4.5);"
+        >
+          <div
+            class=""
+            style="background-image: url(http://localhost:8080/images/header-desktop.jpg); position: absolute; width: 100%; height: 100%; top: 0px; background-size: cover;"
+          />
+          <iframe
+            allow="autoplay;"
+            allowfullscreen=""
+            frameborder="0"
+            src="https://player.vimeo.com/video/468693933?background=1&autoplay=1&title=0&byline=0&portrait=0"
+            style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="c3 test__overlay"
+      />
+      <div
+        class="c4"
+      >
+        <img
+          alt="Logo"
+          class="c5 test__logo"
+          src="http://localhost:8080/images/catalyst.svg"
+        />
+      </div>
+      <div
+        class="test__content__wrapper"
+      >
+        <div
+          class="c6 test__content"
+          width="100%"
+        >
+          <h1
+            class="c7 pre-animated"
+          >
+            A title
+          </h1>
+          <h2
+            class="c8 pre-animated"
+          >
+            A sub title
+          </h2>
+          <hr
+            class="c9 pre-animated"
+          />
+          <div
+            class="c10 pre-animated"
+          >
+            <p>
+              A tagline
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="c11 test__scroll pre-animated"
+      >
+        Scroll for more
+        <img
+          src="http://localhost:8080/images/chevron-down.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,11 @@
+{
+  "maxWidth": "900px",
+  "colors": {
+    "primary": "orange",
+    "secondary": "green",
+    "tertiary": "white",
+    "background": "white",
+    "copy": "black",
+    "links": "blue"
+  }
+}

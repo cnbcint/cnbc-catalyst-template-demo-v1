@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Renders correctly 1`] = `
+.c0 > * {
+  line-height: 150%;
+  text-align: left;
+  color: inherit;
+  width: 100%;
+}
+
+.c1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+<div
+  class="c0"
+  color="inherit"
+>
+  <h2
+    class="c1 pre-animated"
+  >
+    Testing Title
+  </h2>
+</div>
+`;

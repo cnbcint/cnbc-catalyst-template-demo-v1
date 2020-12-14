@@ -1,0 +1,36 @@
+&__cases {
+  background-color: black;
+  color: white;
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4rem;
+  }
+  &__case {
+    img {
+      width: 100%;
+    }
+    a > div {
+      position: relative;
+      h4 {
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.75);
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+      }
+      &:hover {
+        h4 {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

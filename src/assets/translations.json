@@ -1,0 +1,24 @@
+{
+  "landing": {
+    "title": {
+      "en": "FASTER TO THE FUTURE",
+      "cn": "面向未来",
+      "jp": "将来に向けてより速く"
+    },
+    "subtitle": {
+      "en": "DRIVING A RETURN TO STABILITY, GROWTH & INNOVATION.",
+      "cn": "推动稳定性，增长与创新的回归。",
+      "jp": "安定性、成長、革新への回帰を推進します。"
+    },
+    "copy": {
+      "en": "Join us on 16 September in a 60-minute virtual show to hear executives across industries talk about how they are responding and rebuilding their organizations to meet with today’s volatile economic environment.",
+      "cn": "9月16日在60分钟的虚拟节目中加入我们，聆听各行各业的高管谈论他们如何应对和重建组织，以应对当今动荡的经济环境。",
+      "jp": "9月16日に60分間のバーチャルショーに参加して、さまざまな業界の幹部が、今日の不安定な経済環境に対応するための組織の対応と再構築について語ってください。"
+    },
+    "cta": {
+      "en": "Add to calendar",
+      "cn": "添加到日曆",
+      "jp": "カレンダーに追加"
+    }
+  }
+}

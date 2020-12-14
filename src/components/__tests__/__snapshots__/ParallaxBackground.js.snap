@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParallaxBackground Renders correctly 1`] = `
+.c0 {
+  background-image: url(http://localhost:8080/images/responsive/output/image03-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.c1 {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.c2 {
+  position: relative;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: none;
+}
+
+.c4 {
+  width: calc(100% - 2rem);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.c5 {
+  font-size: 1.2rem;
+  line-height: 125%;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    background-image: url(http://localhost:8080/images/responsive/output/image03-tablet.jpg);
+  }
+}
+
+@media (min-width:1280px) {
+  .c0 {
+    background-image: url(http://localhost:8080/images/responsive/output/image03-desktop.jpg);
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+<div
+  class="c0 test"
+>
+  <div
+    class="c1 test__overlay"
+  />
+  <div
+    class="c2 test__content"
+  >
+    <div
+      class="c3"
+    >
+      <div
+        class="c4"
+      >
+        <p
+          class="c5"
+        >
+          Testing Content
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

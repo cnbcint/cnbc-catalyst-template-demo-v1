@@ -1,0 +1,8 @@
+//https://github.com/tgdev/animate-sass/blob/master/README.md
+//https://github.com/tgdev/animate-sass/blob/master/helpers/_settings.scss
+$use-fade: true;
+$use-zoom: true;
+@import "~animate-sass/animate";
+.pre-animated {
+  opacity: 0;
+}

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Renders 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+}
+
+.c0 > * {
+  font-size: 1.125rem;
+  line-height: 140%;
+}
+
+.c0 hr {
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c0 img {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c0 p {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul {
+  list-style: disc !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul li {
+  list-style: disc !important;
+  margin: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+@media (min-width:768px) {
+  .c0 hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    Content
+  </div>
+</div>
+`;

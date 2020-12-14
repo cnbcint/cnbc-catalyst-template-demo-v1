@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Poster Renders correctly 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+
+.c0 > * {
+  font-size: 1.125rem;
+  line-height: 140%;
+  color: black;
+}
+
+.c0 hr {
+  border-color: orange;
+  border-style: solid;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c0 img {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c0 p {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul {
+  list-style: disc !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul li {
+  list-style: disc !important;
+  margin: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+.c1 {
+  font-size: 1.5rem;
+  background-color: none;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.c2 {
+  display: block;
+}
+
+.c2 img {
+  margin: 0;
+}
+
+.c4 {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.c4 > hr {
+  width: 50%;
+  margin: 2rem 0;
+  border-color: orange;
+  background-color: orange;
+}
+
+.c3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+}
+
+@media (min-width:768px) {
+  .c0 hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80%;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 test"
+  >
+    <picture
+      class="c2"
+    >
+      <source
+        media="(min-width:1280px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-desktop.jpg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-tablet.jpg"
+      />
+      <img
+        alt="poster"
+        loading="lazy"
+        src="http://localhost:8080/images/responsive/output/image05-mobile.jpg"
+      />
+    </picture>
+    <div
+      class="c3"
+    />
+    <div
+      class="c4 test__content"
+    >
+      <div
+        class="pre-animated"
+      >
+        Testing Content
+      </div>
+      <hr
+        class="pre-animated"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Poster Renders correctly with no dividers 1`] = `
+.c0 {
+  display: block;
+  width: 100%;
+  background-color: white;
+}
+
+.c0 > * {
+  font-size: 1.125rem;
+  line-height: 140%;
+  color: black;
+}
+
+.c0 hr {
+  border-color: orange;
+  border-style: solid;
+  display: inline-block;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.c0 img {
+  width: 100%;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c0 p {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul {
+  list-style: disc !important;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.c0 ul li {
+  list-style: disc !important;
+  margin: 1rem !important;
+  margin-left: 2rem !important;
+}
+
+.c1 {
+  font-size: 1.5rem;
+  background-color: none;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+.c2 {
+  display: block;
+}
+
+.c2 img {
+  margin: 0;
+}
+
+.c4 {
+  position: absolute;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.c4 > hr {
+  width: 50%;
+  margin: 2rem 0;
+  border-color: orange;
+  background-color: orange;
+}
+
+.c3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.75);
+}
+
+@media (min-width:768px) {
+  .c0 hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80%;
+  }
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1 test"
+  >
+    <picture
+      class="c2"
+    >
+      <source
+        media="(min-width:1280px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-desktop.jpg"
+      />
+      <source
+        media="(min-width:768px)"
+        srcset="http://localhost:8080/images/responsive/output/image05-tablet.jpg"
+      />
+      <img
+        alt="poster"
+        loading="lazy"
+        src="http://localhost:8080/images/responsive/output/image05-mobile.jpg"
+      />
+    </picture>
+    <div
+      class="c3"
+    />
+    <div
+      class="c4 test__content"
+    >
+      <div
+        class="pre-animated"
+      >
+        Testing Content
+      </div>
+      <hr
+        class="pre-animated"
+      />
+    </div>
+  </div>
+</div>
+`;

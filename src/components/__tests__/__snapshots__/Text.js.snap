@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text Renders correctly 1`] = `
+.c0 {
+  font-size: 1.2rem;
+  line-height: 125%;
+}
+
+<p
+  class="c0"
+>
+  Testing Content
+</p>
+`;
+
+exports[`Text Renders correctly dropCap 1`] = `
+.c0 {
+  font-size: 1.2rem;
+  line-height: 125%;
+}
+
+.c0::first-letter {
+  padding: 0 0;
+  margin: 0.5rem 1rem 0 0;
+  font-size: 5.5rem;
+  font-weight: bold;
+  float: left;
+  line-height: 4rem;
+}
+
+<p
+  class="c0"
+>
+  Testing Content
+</p>
+`;
+
+exports[`Text Renders correctly highlighted 1`] = `
+.c0 {
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+
+<p
+  class="c0"
+>
+  Testing Content
+</p>
+`;
