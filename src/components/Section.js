@@ -2,19 +2,44 @@ import React from "react";
 import PropTypes from "prop-types";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
+export const navigateTo = (path) => {
+  window.scroll(0, document.getElementsByName(path)[0].offsetTop);
+  history.pushState(false, false, "#" + path);
+  window.dispatchEvent(
+    new Event("HASH_NAV", {
+      url: "#" + path,
+    })
+  );
+};
+
+export function useHashNav() {
+  const [currentHash, setCurrentHash] = React.useState(null);
+  React.useEffect(() => {
+    window.addEventListener(
+      "HASH_NAV",
+      () => {
+        setCurrentHash(location.hash);
+      },
+      false
+    );
+  }, []);
+  return currentHash;
+}
+
 const Section = (props) => {
   const observer = useIntersectionObserver(
     () => {
       props.inCallback(props.path);
-      if (props.path === "#") {
-        history.pushState(
-          false,
-          false,
-          props.path.indexOf("#") === -1 ? "#" + props.path : props.path
-        );
-      } else {
-        window.location.hash = props.path;
-      }
+      history.pushState(
+        false,
+        false,
+        props.path.indexOf("#") === -1 ? "#" + props.path : props.path
+      );
+      window.dispatchEvent(
+        new Event("HASH_NAV", {
+          url: props.path.indexOf("#") === -1 ? "#" + props.path : props.path,
+        })
+      );
     },
     { threshold: 0.1, rootMargin: props.rootMargin }
   );
