@@ -33,7 +33,7 @@
       "stage": {
         "aws_bucket": "cnbc-uk-catalyst-studio-demos",
         "aws_region": "us-west-2",
-        "aws_root": "https://d2ycf1zjqenqz7.cloudfront.net/advertorial",
+        "aws_root": "https://advertorials-stage.cnbc.com/advertorial",
         "aws_distribution": "E28G042ML0ISVL"
       },
       "prod": {
