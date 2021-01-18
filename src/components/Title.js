@@ -6,10 +6,12 @@ import useAnimation from "../hooks/useAnimation";
 
 const Container = styled.div`
   > * {
-    line-height: 150%;
+    line-height: 120%;
     text-align: ${(props) => props.aligment};
     color: ${(props) => props.color};
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 `;
 const TH2 = styled.h2`

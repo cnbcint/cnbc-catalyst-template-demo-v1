@@ -7,6 +7,8 @@ const Pdrop = styled.p`
   font-size: ${(props) => (props.highlight ? "1.4em" : "1.2rem")};
   line-height: ${(props) => (props.highlight ? "140%" : "125%")};
   text-align: ${(props) => props.textAlign};
+  max-width: 600px;
+  margin:0 auto;
   &::first-letter {
     color: ${(props) => props.dropCapColor};
     padding: 0 0;
@@ -22,6 +24,9 @@ const P = styled.p`
   font-size: ${(props) => (props.highlight ? "1.4rem" : "1.2rem")};
   line-height: ${(props) => (props.highlight ? "140%" : "125%")};
   text-align: ${(props) => props.textAlign};
+  max-width: 600px;
+  margin:0 auto;
+
 `;
 /** 
  Text Block will add a paragraph element to it's children. Do not add P inside this element to avoid double nested P element

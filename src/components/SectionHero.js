@@ -42,17 +42,17 @@ const ImageContainer = styled(Container)`
 
 const Content = styled.div`
   position: relative;
-  padding: ${getMargin(2)};
-  width: calc(100% - ${getMargin(2)});
+  // width: calc(100% - ${getMargin(2)});
   box-sizing: border-box;
-  @media (min-width: ${breakpoints.mobile}) {
-    width: ${(props) => props.width};
-    min-width: ${(props) => props.minWidth};
-    max-width: ${(props) => props.maxWidth};
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top:10%;
   > * {
     color: ${(props) => props.copyColor};
     text-align: ${(props) => props.aligment};
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: ${getMargin(1)};
   }
 `;
 
@@ -65,13 +65,16 @@ const Overlay = styled.div`
   background: ${(props) => props.overlayColor};
 `;
 
-const Divider = styled.hr`
-  border-style: solid;
+const Divider = styled.div`
+  // border-style: solid;
+  width:200px;
+  height:15px;
+  background: ${(props) => props.dividerColor} !important;
   margin: ${getMargin(1)} 0;
   @media (min-width: ${breakpoints.mobile}) {
     margin: ${getMargin(2)} 0;
   }
-  border-color: ${(props) => props.dividerColor} !important;
+  // border-color: ${(props) => props.dividerColor} !important;
 `;
 
 const Title = styled.h1`
@@ -90,6 +93,7 @@ const SubTitle = styled.h2`
   font-size: 1.5rem;
   line-height: 120%;
   font-weight: bold;
+  // text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 2rem;
   }
@@ -100,25 +104,6 @@ const Copy = styled.div`
   line-height: 1.4rem;
 `;
 
-const Logo = styled.img`
-  position: relative;
-
-  max-width: ${(props) => props.maxWidth};
-  @media (min-width: ${breakpoints.mobile}) {
-    width: auto;
-  }
-`;
-
-const LogoContainer = styled.div`
-  width: 100%;
-  display: flex;
-  padding: ${getMargin(1)};
-  @media (min-width: ${breakpoints.mobile}) {
-    padding: ${getMargin(2)};
-  }
-  box-sizing: border-box;
-  justify-content: ${(props) => getJustifyContent(props.aligment)};
-`;
 
 const BackgroundVideo = styled.div`
   width: 100%;
@@ -129,17 +114,7 @@ const BackgroundVideo = styled.div`
   height: 100%;
   background: transparent;
 `;
-const More = styled.div`
-  color: white;
-  position: absolute;
-  bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  font-size:4rem;
-`;
+
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
@@ -160,7 +135,7 @@ let timeout = null; // out of the render scope to avoid reseting this variable o
 /**
  * SImple Advetorial Hero component with space for title, sub title and copy
  */
-export default function SimpleHero(props) {
+export default function SectionHero(props) {
   const animationConfig = {
     animationName: getAnimation(props.copyAligment),
     duration: 500,
@@ -237,19 +212,6 @@ export default function SimpleHero(props) {
           props.className ? props.className + "__content__container" : ""
         }
       >
-        <LogoContainer
-          className={
-            props.className ? props.className + "__logo__container" : ""
-          }
-          aligment={props.companyLogoAligment}
-        >
-          <Logo
-            className={props.className ? props.className + "__logo" : ""}
-            maxWidth={props.companyLogoMaxWidth}
-            src={props.companyLogoURL}
-            alt="Logo"
-          />
-        </LogoContainer>
         <ContentWrapper
           className={
             props.className ? props.className + "__content__wrapper" : ""
@@ -266,27 +228,27 @@ export default function SimpleHero(props) {
             <Title uppercased={props.titleUppercased} ref={refTitle}>
               {props.title()}
             </Title>
+            {/* <SubTitle uppercased={props.subTitleUppercased} ref={refSubTitle}>
+              {props.subTitle()}
+            </SubTitle> */}
             {props.subTitle && (
               <SubTitle ref={refSubTitle}>{props.subTitle}</SubTitle>
             )}
-            {/* {props.addDivider && (
+            {props.addDivider && (
               <Divider
                 ref={refDevider}
                 dividerColor={layout.colors[props.dividerColor]}
               />
-            )} */}
+            )}
             <Copy ref={refCopy}>{props.copy()}</Copy>
           </Content>
         </ContentWrapper>
-        <More className={props.className ? props.className + "__more" : ""}>
-          <ion-icon name="chevron-down-outline"></ion-icon>
-        </More>
       </ContentContainer>
     </ContainerComponent>
   );
 }
 
-SimpleHero.defaultProps = {
+SectionHero.defaultProps = {
   copyAligment: "center",
   logoAligment: "right",
   copyColor: "white",
@@ -301,11 +263,12 @@ SimpleHero.defaultProps = {
   copy: () => null,
   addDivider: true,
   titleUppercased: false,
+  subTitleUppercased: false,
   companyLogoMaxWidth: "50%",
-  subTitle: "",
+  // subTitle: "",
 };
 
-SimpleHero.propTypes = {
+SectionHero.propTypes = {
   /**
    * Ratio for background video to calculate reponsive behavior.
    * Ratio is width/height
@@ -320,6 +283,10 @@ SimpleHero.propTypes = {
    * Uppercase the title
    */
   titleUppercased: PropTypes.bool,
+  /**
+   * Uppercase the subttitle
+   */
+  subTitleUppercased: PropTypes.bool,
   /**
    * This will also affects animations
    */
@@ -355,18 +322,12 @@ SimpleHero.propTypes = {
   /**
    * Displays smaller sub title
    */
+  // subTitle: PropTypes.func,
   subTitle: PropTypes.string,
   /**
    * Displays large title
    */
   title: PropTypes.func.isRequired,
-  /**
-   * Logo image path
-   */
-  companyLogoURL: PropTypes.string.isRequired,
-  /**
-   * CSS width property for the copy box
-   */
   copyWidth: PropTypes.string,
   /**
    * Copy Min width for mobile

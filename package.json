@@ -27,7 +27,7 @@
     "postinstall": "npm rebuild node-sass"
   },
   "cnbc": {
-    "projectName": "cnbc-catalyst-template-2021-B",
+    "projectName": "cnbc-catalyst-template-2021-B1",
     "root": "advertorial",
     "env": {
       "stage": {

@@ -19,14 +19,15 @@ const Container = styled.div`
     color: ${(props) => props.colors.copy};
   }
   hr {
-    border-color: ${(props) => props.primaryColor};
+    // border-color: ${(props) => props.primaryColor};
+    border-color: ${(props) => props.colors.copy};
     border-style: solid;
     display: inline-block;
     width: 100%;
-    margin-top: ${getMargin(1)};
+    // margin-top: ${getMargin(1)};
     margin-bottom: ${getMargin(1)};
     @media (min-width: ${breakpoints.mobile}) {
-      margin-top: ${getMargin(2)};
+      // margin-top: ${getMargin(2)};
       margin-bottom: ${getMargin(2)};
     }
   }

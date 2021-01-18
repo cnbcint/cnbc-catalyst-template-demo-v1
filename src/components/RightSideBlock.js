@@ -19,34 +19,51 @@ const Container = styled.div`
 `;
 const Side = styled.div`
   width: 80%;
-
+  font-weight:bold;
+  font-size:1.7rem;
+  line-height:110%;
+  p::first-letter{
+    margin-left:-10px;
+  }
   box-sizing: border-box;
-  @media (min-width: ${breakpoints.mobile}) {
+  @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
     min-width: ${(props) => props.width}px;
     width: ${(props) => props.width}px;
-    padding-right: ${getMargin(2)};
+    padding-left: ${getMargin(2)};
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 600px;
+    margin:0 auto;
+    width:100%;
   }
 `;
 const Content = styled.div`
   width: 100%;
-  max-width: calc(${(props) => props.maxWidth});
+  max-width: 600px;
+  margin-left:calc(76.45% - 600px);
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
-  @media (min-width: ${breakpoints.mobile}) {
+  @media (min-width: ${breakpoints.tablet}) {
     width: calc(100% - ${getMargin(2)});
+  }
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 600px;
+    margin:0 auto;
+    padding:0;
   }
 `;
 const Wrapper = styled.div`
-  max-width: calc(
-    ${(props) => props.maxWidth} + ${(props) => 2 * props.sideWidth}px
-  );
+  // max-width: calc(
+  //   ${(props) => props.maxWidth} + ${(props) => 2 * props.sideWidth}px
+  // );
+  max-width: ${(props) => props.maxWidth};
   display: flex;
   width: calc(100% - ${getMargin(2)});
   align-items: center;
   flex-direction: column;
-  @media (min-width: ${breakpoints.mobile}) {
+  @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
     align-items: baseline;
   }
@@ -57,8 +74,8 @@ export default function RightSideBlock(props) {
   return (
     <Container className={props.className} style={props.style}>
       <Wrapper sideWidth={props.sideWidth} maxWidth={layout.maxWidth}>
-        <Side width={props.sideWidth}>{props.sideContent()}</Side>
         <Content maxWidth={layout.maxWidth}>{props.children} </Content>
+        <Side width={props.sideWidth}>{props.sideContent()}</Side>
       </Wrapper>
     </Container>
   );
