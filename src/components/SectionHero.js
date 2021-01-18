@@ -43,7 +43,7 @@ const Content = styled.div`
   position: relative;
   // width: calc(100% - ${getMargin(2)});
   box-sizing: border-box;
-  max-width: 600px;
+  max-width: ${(props) => props.maxWidth};
   margin: 0 auto;
   padding-top:10%;
   > * {

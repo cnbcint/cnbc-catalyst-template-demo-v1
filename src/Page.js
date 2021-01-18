@@ -99,7 +99,7 @@ function Page() {
         // companyLogoMaxWidth="200px"
         dividerColor="primary"
         copyAligment="left"
-        // copyMaxWidth="600px"
+        copyMaxWidth="600px"
         // copyMaxWidth={Theme.maxWidth}
         videoId="468693933"
         videoRatio={720 / 360}
@@ -124,7 +124,7 @@ function Page() {
         // companyLogoMaxWidth="200px"
         dividerColor="primary"
         copyAligment="left"
-        // copyMaxWidth="600px"
+        copyMaxWidth="600px"
         // copyMaxWidth={Theme.maxWidth}
         videoId="468693933"
         videoRatio={720 / 360}
