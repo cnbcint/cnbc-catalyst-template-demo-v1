@@ -7,7 +7,6 @@ import VimeoPlayer from "../components/VimeoPlayer";
 import { LayoutContext } from "./Main";
 import {
   breakpoints,
-  getJustifyContent,
   getAnimation,
   getMargin,
 } from "../helpers/Layout";
