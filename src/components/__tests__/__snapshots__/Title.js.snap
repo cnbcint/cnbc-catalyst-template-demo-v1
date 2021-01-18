@@ -2,10 +2,12 @@
 
 exports[`Title Renders correctly 1`] = `
 .c0 > * {
-  line-height: 150%;
+  line-height: 120%;
   text-align: left;
   color: inherit;
   width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .c1 {

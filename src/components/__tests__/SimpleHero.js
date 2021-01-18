@@ -125,15 +125,15 @@ describe("SimpleHero", () => {
     expect(p.textContent).toMatch("A tagline");
   });
 
-  it("Renders the divider with the correct color", () => {
-    const { container } = render(<Component />);
+  // it("Renders the divider with the correct color", () => {
+  //   const { container } = render(<Component />);
 
-    const divider = container.getElementsByTagName("hr")[0];
-    expect(divider).toHaveStyleRule(
-      "border-color",
-      `${Theme.colors["secondary"]} !important`
-    );
-  });
+  //   const divider = container.getElementsByTagName("hr")[0];
+  //   expect(divider).toHaveStyleRule(
+  //     "border-color",
+  //     `${Theme.colors["secondary"]} !important`
+  //   );
+  // });
 
   it("Adds classNames ", () => {
     const { container } = render(<Component />);

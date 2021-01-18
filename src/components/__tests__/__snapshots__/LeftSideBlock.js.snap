@@ -14,11 +14,10 @@ exports[`LeftSideBlock Renders 1`] = `
 }
 
 .c0 hr {
-  border-color: orange;
+  border-color: black;
   border-style: solid;
   display: inline-block;
   width: 100%;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -104,6 +103,8 @@ exports[`LeftSideBlock Renders 1`] = `
 .c7 {
   font-size: 1.2rem;
   line-height: 125%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .c4 {
@@ -118,7 +119,6 @@ exports[`LeftSideBlock Renders 1`] = `
 
 @media (min-width:768px) {
   .c0 hr {
-    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
