@@ -269,12 +269,12 @@ export default function SimpleHero(props) {
             {props.subTitle && (
               <SubTitle ref={refSubTitle}>{props.subTitle}</SubTitle>
             )}
-            {/* {props.addDivider && (
+             {props.addDivider && (
               <Divider
                 ref={refDevider}
                 dividerColor={layout.colors[props.dividerColor]}
               />
-            )} */}
+            )} 
             <Copy ref={refCopy}>{props.copy()}</Copy>
           </Content>
         </ContentWrapper>
