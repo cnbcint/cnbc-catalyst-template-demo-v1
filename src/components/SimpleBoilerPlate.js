@@ -14,6 +14,8 @@ const Container = styled.div`
   padding-bottom: ${getMargin(3)};
   padding-left: ${getMargin(1)};
   padding-right: ${getMargin(1)};
+  max-width: 600px;
+  margin: 0 auto;
 `;
 
 const Content = styled.div`

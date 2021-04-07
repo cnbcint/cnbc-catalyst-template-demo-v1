@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useContext}from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { getAnimation, getMargin } from "../helpers/Layout";
+import {   breakpoints, getAnimation, getMargin } from "../helpers/Layout";
 import useAnimation from "../hooks/useAnimation";
+import { LayoutContext } from "./Main";
 
 const Container = styled.div`
   > * {
@@ -34,6 +35,17 @@ const TH6 = styled.h6`
   font-size: 1.5rem;
   margin-bottom: ${getMargin(2)};
 `;
+const Divider = styled.div`
+  // border-style: solid;
+  width:200px;
+  height:15px;
+  background: ${(props) => props.dividerColor} !important;
+  margin: ${getMargin(1)} 0;
+  @media (min-width: ${breakpoints.mobile}) {
+    margin: ${getMargin(2)} 0;
+  }
+  // border-color: ${(props) => props.dividerColor} !important;
+`;
 /**
  * Title Element width animations capabilities.
  */
@@ -64,6 +76,9 @@ export default function Title(props) {
     autoStart: true,
   });
 
+
+  const layout = useContext(LayoutContext);
+
   return (
     <Container
       color={props.color}
@@ -71,7 +86,11 @@ export default function Title(props) {
       style={props.style}
       aligment={props.aligment}
     >
-      <Element ref={refCopy}>{props.children}</Element>
+      <Element ref={refCopy}>{props.children}
+      <Divider
+        dividerColor={[props.dividerColor]}
+      /></Element>
+     
     </Container>
   );
 }
@@ -83,6 +102,7 @@ Title.defaultProps = {
   color: "inherit",
   className: "",
   style: {},
+  dividerColor: "primary",
 };
 
 Title.propTypes = {
@@ -108,4 +128,8 @@ Title.propTypes = {
    Title aligment this will also affect animation beeing used
   */
   aligment: PropTypes.oneOf(["left", "center", "right"]),
+  /**
+   * Devider color css hex
+   */
+   dividerColor: PropTypes.string,
 };

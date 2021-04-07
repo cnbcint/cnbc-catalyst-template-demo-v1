@@ -35,6 +35,7 @@ function Page() {
           companyLogoAligment="right"
           companyLogoMaxWidth="200px"
           dividerColor="primary"
+          addDivider={false}
           copyAligment="left"
           copyMaxWidth="800px"
           // copyMaxWidth={Theme.maxWidth}
@@ -165,7 +166,9 @@ function Page() {
           </Text>
       </RightSideBlock>
         <Block>
-          <Title>Lorem Ipsum 1</Title>
+          <Title
+                    dividerColor="primary"
+                    >Lorem Ipsum 1</Title>
           <Text dropCap>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque. Quis hendrerit dolor magna eget est. Lobortis mattis aliquam faucibus purus in. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Tincidunt arcu non sodales neque. Tellus id interdum velit laoreet id donec ultrices. In nulla posuere sollicitudin aliquam. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. In massa tempor nec feugiat nisl pretium fusce id. Semper viverra nam libero justo laoreet sit amet cursus. Arcu non sodales neque sodales. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Vehicula ipsum a arcu cursus vitae congue. 
           </Text>

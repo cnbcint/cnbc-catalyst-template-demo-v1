@@ -15,6 +15,19 @@ exports[`Title Renders correctly 1`] = `
   margin-bottom: 2rem;
 }
 
+.c2 {
+  width: 200px;
+  height: 15px;
+  background: primary !important;
+  margin: 1rem 0;
+}
+
+@media (min-width:768px) {
+  .c2 {
+    margin: 2rem 0;
+  }
+}
+
 <div
   class="c0"
   color="inherit"
@@ -23,6 +36,9 @@ exports[`Title Renders correctly 1`] = `
     class="c1 pre-animated"
   >
     Testing Title
+    <div
+      class="c2"
+    />
   </h2>
 </div>
 `;
