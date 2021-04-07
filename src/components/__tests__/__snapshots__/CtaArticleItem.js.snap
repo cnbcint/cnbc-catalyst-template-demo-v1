@@ -14,11 +14,10 @@ exports[`CtaArticleItem Renders correctly 1`] = `
 }
 
 .c0 hr {
-  border-color: orange;
+  border-color: black;
   border-style: solid;
   display: inline-block;
   width: 100%;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -86,7 +85,6 @@ exports[`CtaArticleItem Renders correctly 1`] = `
 
 @media (min-width:768px) {
   .c0 hr {
-    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }

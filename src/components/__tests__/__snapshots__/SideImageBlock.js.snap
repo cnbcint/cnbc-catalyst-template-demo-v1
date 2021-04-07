@@ -53,6 +53,8 @@ exports[`SideImageBlock Renders correctly 1`] = `
 .c4 {
   font-size: 1.2rem;
   line-height: 125%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 @media (min-width:768px) {

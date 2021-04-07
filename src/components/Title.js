@@ -88,7 +88,7 @@ export default function Title(props) {
     >
       <Element ref={refCopy}>{props.children}
       <Divider
-        dividerColor={layout.colors[props.dividerColor]}
+        dividerColor={[props.dividerColor]}
       /></Element>
      
     </Container>
@@ -102,7 +102,7 @@ Title.defaultProps = {
   color: "inherit",
   className: "",
   style: {},
-  dividerColor: "inherit",
+  dividerColor: "primary",
 };
 
 Title.propTypes = {
