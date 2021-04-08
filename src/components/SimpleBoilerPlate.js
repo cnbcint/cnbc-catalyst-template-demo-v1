@@ -17,6 +17,20 @@ const Container = styled.div`
   max-width: 600px;
   margin: 0 auto;
 `;
+const ImageContainer = styled(Container)`
+  background-size: cover;
+  height:auto;
+  margin-bottom:-10px;
+  background-position: center;
+  background-image: url(${(props) => props.backgroundImage.mobile});
+  @media (min-width: ${breakpoints.mobile}) {
+    background-image: url(${(props) => props.backgroundImage.tablet});
+  }
+  @media (min-width: ${breakpoints.tablet}) {
+    background-image: url(${(props) => props.backgroundImage.desktop});
+  }
+`;
+
 
 const Content = styled.div`
   p,
@@ -87,12 +101,17 @@ export default function SimpleBoilerPlate(props) {
     autoStart: true,
   });
 
+  const ContainerComponent = props.backgroundImage ? ImageContainer : Container;
+
+
   return (
-    <Container
-      className={props.className}
-      backgroundColor={props.backgroundColor}
-      style={props.style}
-    >
+    <ContainerComponent
+    backgroundImage={props.backgroundImage}
+    className={props.className}
+    backgroundColor={props.backgroundColor}
+    style={props.style}
+  >
+
       <Content copyColor={props.copyColor}>
         {props.companyLogoURL && (
           <Logo ref={refLogo} src={props.companyLogoURL} />
@@ -100,7 +119,7 @@ export default function SimpleBoilerPlate(props) {
         <Title ref={refTitle}>{props.title}</Title>
         <Copy ref={refCopy}>{props.copy()}</Copy>
         <CTA
-          outColor={layout.colors.primary}
+          outColor={props.outColor}
           href={props.ctaLink}
           overColor={layout.colors.secondary}
           ref={refCTA}
@@ -108,7 +127,7 @@ export default function SimpleBoilerPlate(props) {
           {props.ctaText}
         </CTA>
       </Content>
-    </Container>
+    </ContainerComponent>
   );
 }
 
@@ -117,9 +136,19 @@ SimpleBoilerPlate.defaultProps = {
   companyLogoURL: "",
   backgroundColor: "transparent",
   copyColor: "inherit",
+  outColor:"white"
 };
 
 SimpleBoilerPlate.propTypes = {
+   /**
+   * Responsive background image this can be differen aspect ratios per screen sizes
+   */
+    backgroundImage: PropTypes.shape({
+      mobile: PropTypes.string,
+      tablet: PropTypes.string,
+      desktop: PropTypes.string,
+    }),
+  outColor: PropTypes.string,
   /**
    * React CSS format styles override
    */

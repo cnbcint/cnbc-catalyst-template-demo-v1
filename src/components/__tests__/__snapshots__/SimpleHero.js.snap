@@ -90,6 +90,12 @@ exports[`SimpleHero Renders 1`] = `
   background: rgba(0,0,0,.5);
 }
 
+.c11 {
+  border-style: solid;
+  margin: 1rem 0;
+  border-color: green !important;
+}
+
 .c9 {
   font-size: 1.8rem;
   line-height: 100%;
@@ -105,7 +111,7 @@ exports[`SimpleHero Renders 1`] = `
   font-weight: bold;
 }
 
-.c11 {
+.c12 {
   font-size: 1rem;
   line-height: 1.4rem;
 }
@@ -139,7 +145,7 @@ exports[`SimpleHero Renders 1`] = `
   background: transparent;
 }
 
-.c12 {
+.c13 {
   color: white;
   position: absolute;
   bottom: 2rem;
@@ -236,6 +242,12 @@ exports[`SimpleHero Renders 1`] = `
 }
 
 @media (min-width:768px) {
+  .c11 {
+    margin: 2rem 0;
+  }
+}
+
+@media (min-width:768px) {
   .c9 {
     font-size: 3.5rem;
   }
@@ -318,8 +330,11 @@ exports[`SimpleHero Renders 1`] = `
             >
               A sub title
             </h2>
-            <div
+            <hr
               class="c11 pre-animated"
+            />
+            <div
+              class="c12 pre-animated"
             >
               <p>
                 A tagline
@@ -328,7 +343,7 @@ exports[`SimpleHero Renders 1`] = `
           </div>
         </div>
         <div
-          class="c12 test__more"
+          class="c13 test__more"
         >
           <ion-icon
             name="chevron-down-outline"

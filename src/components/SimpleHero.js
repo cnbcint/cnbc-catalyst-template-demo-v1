@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import useAnimation from "../hooks/useAnimation";
 import useContainerSize from "../hooks/useContainerSize";
 import VimeoPlayer from "../components/VimeoPlayer";
-// import { LayoutContext } from "./Main";
+import { LayoutContext } from "./Main";
 import {
   breakpoints,
   getJustifyContent,
@@ -65,14 +65,14 @@ const Overlay = styled.div`
   background: ${(props) => props.overlayColor};
 `;
 
-// const Divider = styled.hr`
-//   border-style: solid;
-//   margin: ${getMargin(1)} 0;
-//   @media (min-width: ${breakpoints.mobile}) {
-//     margin: ${getMargin(2)} 0;
-//   }
-//   border-color: ${(props) => props.dividerColor} !important;
-// `;
+const Divider = styled.hr`
+  border-style: solid;
+  margin: ${getMargin(1)} 0;
+  @media (min-width: ${breakpoints.mobile}) {
+    margin: ${getMargin(2)} 0;
+  }
+  border-color: ${(props) => props.dividerColor} !important;
+`;
 
 const Title = styled.h1`
   font-size: 1.8rem;
@@ -171,10 +171,10 @@ export default function SimpleHero(props) {
 
   const { ref: refTitle } = useAnimation(animationConfig);
   const { ref: refSubTitle } = useAnimation({ ...animationConfig, delay: 125 });
-  // const { ref: refDevider } = useAnimation({ ...animationConfig, delay: 250 });
+  const { ref: refDevider } = useAnimation({ ...animationConfig, delay: 250 });
   const { ref: refCopy } = useAnimation({ ...animationConfig, delay: 250 });
 
-  // const layout = useContext(LayoutContext);
+  const layout = useContext(LayoutContext);
   const [screenWidthToScale, setScreenWidthToScale] = useState(1);
   const {
     width: cWidth,

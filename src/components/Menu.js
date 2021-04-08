@@ -5,8 +5,9 @@ import styled from "styled-components";
 import { breakpoints } from "../helpers/Layout";
 import { navigateTo, useHashNav } from "./Section";
 const Container = styled.div`
-  background-color: ${(props) => props.backgroundColor};
-  box-shadow: 0px 1px 3px 0px black;
+  background: ${(props) => props.backgroundColor};
+  // box-shadow: 0px 1px 3px 0px black;
+  min-height:70px;
   ul {
     margin-top: 0 !important;
     margin-bottom: 0 !important;

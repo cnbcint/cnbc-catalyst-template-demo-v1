@@ -16,12 +16,12 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: ${getMargin(2)};
+  // padding-bottom: ${getMargin(2)};
   @media (min-width: ${breakpoints.mobile}) {
-    padding-bottom: ${getMargin(5)};
+    // padding-bottom: ${getMargin(5)};
   }
   @media (min-width: ${breakpoints.tablet}) {
-    padding-bottom: ${getMargin(10)};
+    // padding-bottom: ${getMargin(10)};
   }
   position: relative;
   overflow: hidden;
@@ -29,6 +29,8 @@ const Container = styled.div`
 
 const ImageContainer = styled(Container)`
   background-size: cover;
+  height:auto;
+  margin-bottom:-10px;
   background-position: center;
   background-image: url(${(props) => props.backgroundImage.mobile});
   @media (min-width: ${breakpoints.mobile}) {
@@ -40,18 +42,20 @@ const ImageContainer = styled(Container)`
 `;
 
 const Content = styled.div`
-  position: relative;
+z-index:1;
   // width: calc(100% - ${getMargin(2)});
   box-sizing: border-box;
   max-width: ${(props) => props.maxWidth};
   margin: 0 auto;
-  padding-top:10%;
+  padding-top:90%;
+  padding-bottom:20%;
   > * {
     color: ${(props) => props.copyColor};
     text-align: ${(props) => props.aligment};
   }
   @media (max-width: ${breakpoints.mobile}) {
     padding: ${getMargin(1)};
+    padding-top:70%;
   }
 `;
 
@@ -92,6 +96,7 @@ const SubTitle = styled.h2`
   font-size: 1.5rem;
   line-height: 120%;
   font-weight: bold;
+  color: ${(props) => props.copyColor};
   // text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 2rem;

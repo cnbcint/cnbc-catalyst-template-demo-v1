@@ -12,7 +12,8 @@ const Container = styled.div`
     color: ${(props) => props.color};
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 1rem auto 0;
+    margin-bottom: 0px!important;
   }
 `;
 const TH2 = styled.h2`
@@ -68,6 +69,14 @@ export default function Title(props) {
       Element = TH6;
       break;
   }
+    const layout = useContext(LayoutContext);
+    const animationConfig = {
+      animationName: getAnimation(props.aligment),
+      duration: 500,
+      delay: 0,
+      loop: props.loopAnimations,
+      autoStart: true,
+    };
   const { ref: refCopy } = useAnimation({
     animationName: getAnimation(props.aligment),
     duration: 500,
@@ -75,9 +84,8 @@ export default function Title(props) {
     loop: props.loopAnimations,
     autoStart: true,
   });
+  const { ref: refDevider } = useAnimation({ ...animationConfig, delay: 250 });
 
-
-  const layout = useContext(LayoutContext);
 
   return (
     <Container
@@ -87,9 +95,14 @@ export default function Title(props) {
       aligment={props.aligment}
     >
       <Element ref={refCopy}>{props.children}
-      <Divider
-        dividerColor={[props.dividerColor]}
-      /></Element>
+      {props.addDivider && (
+              <Divider
+                ref={refDevider}
+                dividerColor={layout.colors[props.dividerColor]}
+              />
+            )} 
+
+       </Element>
      
     </Container>
   );
@@ -102,10 +115,15 @@ Title.defaultProps = {
   color: "inherit",
   className: "",
   style: {},
+  addDivider: true,
   dividerColor: "primary",
 };
 
 Title.propTypes = {
+  /**
+   * Show or hide devider between title and copy
+   */
+   addDivider: PropTypes.bool,
   /**
    Enable to reset animation when users scrolls back into the element.
   */
