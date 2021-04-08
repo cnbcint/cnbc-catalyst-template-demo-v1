@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import useAnimation from "../hooks/useAnimation";
 import useContainerSize from "../hooks/useContainerSize";
 import VimeoPlayer from "../components/VimeoPlayer";
-import { LayoutContext } from "./Main";
+import { LayoutContext } from "../components/Main";
 import {
   breakpoints,
   getJustifyContent,
