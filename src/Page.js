@@ -22,7 +22,7 @@ function Page() {
       <Section path="#">
       <Landing
           className="Landing"
-          title={() => "How connected cloud planning empowers critical decision-making"}
+          title={() => "How Anaplan brings agility and insight into business planning"}
           // subTitle="The standard Lorem Ipsum passage, used since the 1500s"
           // copy={() => (
           //   <p>
