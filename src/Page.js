@@ -398,7 +398,7 @@ Anaplan helps solve the data problem by housing company data and third-party dat
           outColor="white"
           overColor="#95C0F5"
           ctaText="Find out More"
-          ctaLink="https://www.anaplan.com/"
+          ctaLink="https://www.anaplan.com/why-anaplan/"
         />
       </Block>
    </Section>
