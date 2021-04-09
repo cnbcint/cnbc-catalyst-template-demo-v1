@@ -5,7 +5,10 @@ import styled from "styled-components";
 import { breakpoints } from "../helpers/Layout";
 import { navigateTo, useHashNav } from "./Section";
 const Container = styled.div`
+background: rgba(20,42,109,1);
+@media (min-width: ${breakpoints.mobile}) {
   background: ${(props) => props.backgroundColor};
+}
   // box-shadow: 0px 1px 3px 0px black;
   min-height:70px;
   ul {
