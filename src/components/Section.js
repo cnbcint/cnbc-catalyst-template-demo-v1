@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 
 export const navigateTo = (path) => {
-  window.scroll(0, document.getElementsByName(path)[0].offsetTop);
+  window.scroll(0, document.getElementsByName(path)[0].offsetTop - 120);
   history.pushState(false, false, "#" + path);
   window.dispatchEvent(
     new Event("HASH_NAV", {
