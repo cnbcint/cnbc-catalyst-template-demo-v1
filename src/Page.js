@@ -113,8 +113,7 @@ function Page() {
             backgroundColor="linear-gradient(to top, rgba(20,42,109,0) 0%,rgba(20,42,109,1) 67%,rgba(20,42,109,1) 100%)"
             sections={[
               { label: "Anaplan solutions", path: "anaplan-solutions" },
-              { label: "Groupon", path: "groupon" },
-              { label: "Hitachi", path: "hitachi" },
+              { label: "Case of studies", path: "case-of-studies" },
               { label: "About Anaplan", path: "about-anaplan" },
             ]}
           />
@@ -367,28 +366,28 @@ function Page() {
           </Text>
         </Block>
       </Section>
-      <SectionHero
-        className="section4"
-        title={() => "Discover how Anaplan has been helping other companies "}
-        subTitle=""
-        backgroundImage={{
-          desktop: "http://localhost:8080/images/h6.jpg",
-          tablet: "http://localhost:8080/images/h6.jpg",
-          mobile: "http://localhost:8080/images/h6.jpg",
-        }}
-        copyColor="#0B2265"
-        overlayColor="linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 100%);"
-        dividerColor="primary"
-        copyAligment="left"
-        copyMaxWidth="600px"
-        // copyMaxWidth={Theme.maxWidth}
-        // videoId="468693933"
-        // videoRatio={720 / 360}
-        // videoCoverImage="http://localhost:8080/images/header-desktop.jpg"
-        titleUppercased={false}
-      />
-      <Block>
-        <Section path="groupon">
+      <Section path="case-of-studies">
+        <SectionHero
+          className="section4"
+          title={() => "Discover how Anaplan has been helping other companies "}
+          subTitle=""
+          backgroundImage={{
+            desktop: "http://localhost:8080/images/h6.jpg",
+            tablet: "http://localhost:8080/images/h6.jpg",
+            mobile: "http://localhost:8080/images/h6.jpg",
+          }}
+          copyColor="#0B2265"
+          overlayColor="linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,.8) 100%);"
+          dividerColor="primary"
+          copyAligment="left"
+          copyMaxWidth="600px"
+          // copyMaxWidth={Theme.maxWidth}
+          // videoId="468693933"
+          // videoRatio={720 / 360}
+          // videoCoverImage="http://localhost:8080/images/header-desktop.jpg"
+          titleUppercased={false}
+        />
+        <Block>
           <Title addDivider={false}>Groupon</Title>
           <Text>
             When Groupon began using Anaplan in 2013 the fast-paced company was
@@ -413,8 +412,7 @@ function Page() {
             fast-moving company like Groupon is really powerful,” Carrozza
             added.
           </Text>
-        </Section>
-        <Section path="hitachi">
+
           <Title addDivider={false}>Hitachi</Title>
           <Text>
             The Brake Business Unit at Hitachi Automotive Systems leverages
@@ -441,8 +439,8 @@ function Page() {
             a much clearer view of the future. If something changes on a
             project, everyone knows it immediately and can respond quickly.”
           </Text>
-        </Section>
-      </Block>
+        </Block>
+      </Section>
       <Section path="about-anaplan">
         <Block
           style={{
