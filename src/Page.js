@@ -113,7 +113,7 @@ function Page() {
             backgroundColor="linear-gradient(to top, rgba(20,42,109,0) 0%,rgba(20,42,109,1) 67%,rgba(20,42,109,1) 100%)"
             sections={[
               { label: "Anaplan solutions", path: "anaplan-solutions" },
-              { label: "Case of studies", path: "case-of-studies" },
+              { label: "Case Studies", path: "case-studies" },
               { label: "About Anaplan", path: "about-anaplan" },
             ]}
           />
@@ -366,7 +366,7 @@ function Page() {
           </Text>
         </Block>
       </Section>
-      <Section path="case-of-studies">
+      <Section path="case-studies">
         <SectionHero
           className="section4"
           title={() => "Discover how Anaplan has been helping other companies "}
