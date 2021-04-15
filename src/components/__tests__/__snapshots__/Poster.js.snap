@@ -29,8 +29,7 @@ exports[`Poster Renders correctly 1`] = `
 }
 
 .c0 p {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+  margin: 1rem auto !important;
 }
 
 .c0 ul {
@@ -198,8 +197,7 @@ exports[`Poster Renders correctly with no dividers 1`] = `
 }
 
 .c0 p {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+  margin: 1rem auto !important;
 }
 
 .c0 ul {
