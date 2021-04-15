@@ -38,8 +38,7 @@ const Container = styled.div`
     margin-bottom: ${getMargin(2)};
   }
   p {
-    margin-top: ${getMargin(1)} !important;
-    margin-bottom: ${getMargin(1)} !important;
+    margin: 1rem auto !important;
   }
   ul {
     list-style: disc !important;
