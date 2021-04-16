@@ -49,19 +49,14 @@ function Page() {
           <br />
           <Text highlight={true}>
             <strong>
-              When I joined the McDonald&apos;s division of The Coca-Cola
+              &quot;When I joined the McDonald&apos;s division of The Coca-Cola
               Company in late 2018, getting information from 70 finance people
               for our global P&amp;L meant emailing each of them a spreadsheet
               to fill out and return, followed by three months consolidating and
-              summarizing.
-            </strong>
-          </Text>{" "}
-          <Text highlight={true}>
-            <strong>
-              We brought Anaplan on quickly, and by the end of Q1 2019, everyone
-              was working from one place, using the same tool to input their
-              numbers for real-time consolidation. It was a major unlock for
-              efficiency and performance.
+              summarizing. We brought Anaplan on quickly, and by the end of Q1
+              2019, everyone was working from one place, using the same tool to
+              input their numbers for real-time consolidation. It was a major
+              unlock for efficiency and performance.&quot;
             </strong>
           </Text>
           <Text dropCap>
@@ -133,6 +128,7 @@ function Page() {
           titleUppercased={false}
         />
         <RightSideBlock
+          style={{ marginBottom: "0" }}
           sideContent={() => (
             //           <Quote>
             //           Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -176,7 +172,7 @@ function Page() {
           </Text>
         </RightSideBlock>
 
-        <Block>
+        <Block style={{ paddingTop: "1rem" }}>
           {/* <Title
             dividerColor="primary"
           >
