@@ -53,13 +53,17 @@ function Page() {
               Company in late 2018, getting information from 70 finance people
               for our global P&amp;L meant emailing each of them a spreadsheet
               to fill out and return, followed by three months consolidating and
-              summarizing. We brought Anaplan on quickly, and by the end of Q1
-              2019, everyone was working from one place, using the same tool to
-              input their numbers for real-time consolidation. It was a major
-              unlock for efficiency and performance.
+              summarizing.
+            </strong>
+          </Text>{" "}
+          <Text highlight={true}>
+            <strong>
+              We brought Anaplan on quickly, and by the end of Q1 2019, everyone
+              was working from one place, using the same tool to input their
+              numbers for real-time consolidation. It was a major unlock for
+              efficiency and performance.
             </strong>
           </Text>
-
           <Text dropCap>
             That&apos;s the recollection of Victor C. Barnes, who recently
             joined Anaplan as Senior Vice President of Connected Planning. The
