@@ -25,16 +25,8 @@ function Page() {
           title={() =>
             "How Anaplan brings agility and insight into business planning"
           }
-          // subTitle="The standard Lorem Ipsum passage, used since the 1500s"
-          // copy={() => (
-          //   <p>
-          //     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-          //     commodo <strong>ligula eget dolor.</strong> Aenean massa. Cum
-          //     sociis natoque penatibus et magnis dis parturient montes, nascetur
-          //     ridiculus mus.
-          //   </p>
-          // )}
           copyColor="#0B2265"
+          overlayColor="rgba(255,255,255,0.5)"
           companyLogoURL="http://localhost:8080/images/logo.svg"
           companyLogoAligment="left"
           companyLogoMaxWidth="200px"
@@ -44,14 +36,11 @@ function Page() {
           copyMaxWidth="600px"
           // copyMaxWidth={Theme.maxWidth}
           backgroundImage={{
-            desktop: "http://localhost:8080/images/header-desktop.jpg",
-            tablet: "http://localhost:8080/images/header-desktop.jpg",
-            mobile: "http://localhost:8080/images/header-desktop.jpg",
+            desktop: "http://localhost:8080/images/heroanaplan2.jpg",
+            tablet: "http://localhost:8080/images/heroanaplan2.jpg",
+            mobile: "http://localhost:8080/images/heroanaplan2.jpg",
           }}
           alt="Alt Text"
-          // videoId="468693933"
-          // videoRatio={720 / 360}
-          // videoCoverImage="http://localhost:8080/images/header-desktop.jpg"
           titleUppercased={false}
         />
 
@@ -60,50 +49,49 @@ function Page() {
           <br />
           <Text highlight={true}>
             <strong>
-              When I first joined the Coca-Cola team supporting our global
-              business with McDonald’s, getting information from 70 global
-              finance people for our P&amp;L meant emailing them each a
-              spreadsheet to fill out. We brought Anaplan on quickly, and all of
-              a sudden everyone was working from one place, using the same tool
-              to input their numbers in real time. It was a major unlock for
-              efficiency.
+              When I joined the McDonald&apos;s division of The Coca-Cola
+              Company in late 2018, getting information from 70 finance people
+              for our global P&amp;L meant emailing each of them a spreadsheet
+              to fill out and return, followed by three months consolidating and
+              summarizing. We brought Anaplan on quickly, and by the end of Q1
+              2019, everyone was working from one place, using the same tool to
+              input their numbers for real-time consolidation. It was a major
+              unlock for efficiency and performance.
             </strong>
           </Text>
 
           <Text dropCap>
-            That’s the recollection of Victor C. Barnes, who recently joined
-            Anaplan as Senior Vice President of Connected Planning. The
-            company’s online platform helps companies, like Coca-Cola, access
-            data from every corner of their business so they can model multiple
-            scenarios quickly, build more accurate forecasts and make more
-            confident decisions.
+            That&apos;s the recollection of Victor C. Barnes, who recently
+            joined Anaplan as Senior Vice President of Connected Planning. The
+            company&apos;s platform helps companies like Coca-Cola access data
+            from every corner of their business to model multiple scenarios
+            quickly, build more accurate forecasts and make more confident
+            decisions at the speed of the market.
           </Text>
           <Text>
-            For Barnes, his new role is a labor of love, having been
-            instrumental in introducing the McDonald’s Division of The Coca-Cola
-            Company to the enterprise tool while working as the division’s
-            global CFO.
+            Barnes&apos;s new role is a labor of love since he was instrumental
+            in introducing the McDonald&apos;s division of The Coca-Cola Company
+            to Anaplan while working as the division&apos;s global CFO.
           </Text>
           <Text>
             Anaplan arms decision-makers across business areas with the
-            visibility, data and advanced planning, modelling, and forecasting
-            capabilities needed to identify new opportunities to drive growth
-            and reduce costs.
+            visibility, data, advanced planning, modeling, and forecasting
+            capabilities they need to identify new opportunities that drive
+            growth and reduce costs.
           </Text>
           <Text>
-            With McDonald’s selling Coca-Cola products in 105 markets worldwide,
-            Anaplan allowed Barnes to synchronize and standardize processes in
-            different territories - reaching a level of efficiency and data
-            granularity that hadn’t been possible.
+            With McDonald&apos;s selling Coca-Cola products in 105 markets
+            worldwide, Anaplan allowed Barnes to synchronize and standardize
+            processes in different territories - reaching a level of efficiency
+            and data granularity that hadn&apos;t been possible.
           </Text>
           <Text>
             After a successful global P&amp;L implementation, Barnes rolled
-            Anaplan out more broadly, winning plaudits from across the
-            organization.
+            Anaplan out more broadly.
           </Text>
           <Text>
-            “It transformed the capabilities of the McDonald’s division and will
-            drive performance across the organization in the future.”
+            “It transformed the performance of the McDonald&apos;s division and
+            will drive future performance across the organization.”
           </Text>
         </Block>
 
@@ -122,7 +110,7 @@ function Page() {
       <Section path="anaplan-solutions">
         <SectionHero
           className="section1"
-          title={() => "The age of artificial intelligence"}
+          title={() => "Turning data overload into a data goldmine"}
           subTitle=""
           backgroundImage={{
             desktop: "http://localhost:8080/images/h0.jpg",
@@ -149,8 +137,9 @@ function Page() {
             <div>
               <p>
                 &quot;More data is great, but it also means more complexity, and
-                static tools run out of usefulness when there is more data and
-                complexity involved.&quot;
+                static tools aren&apos;t useful when there is more data and
+                complexity involved. It becomes a question of are you able to
+                manage it or are you drowning in it?&quot;
               </p>
               <hr />
               <p>
@@ -161,40 +150,25 @@ function Page() {
           )}
         >
           <Text dropCap>
-            As he works with other C-Suite executives to transform their
+            As he works with other senior executives to transform their
             operations, Barnes notes that Anaplan helped reduce the time his
-            team spent aggregating spreadsheet data, which led to stronger
-            analysis and quicker decision-making around “where to play and how
-            to win”.
+            team spent aggregating spreadsheet data, which led to more decisive
+            analysis and quicker, better decision-making around &quot;where to
+            play and how to win.&quot;
           </Text>
           <Text>
-            “Many executives don’t understand the problem with disparate
-            planning in Excel. By the time they get their information, it’s been
-            chewed up and digested and it looks pretty. They aren’t involved in
-            how it got there but they are making critical decisions based on
-            it,” he explained.
-          </Text>
-          <Text>
-            The reality is businesses have to parse through large amounts of
-            internal and external data to create the assumptions used to build
-            their forecasts, budgets and plans, but today’s organizations,
-            Victor notes, are dealing with a deluge of data that continues to
+            Businesses have to parse through large amounts of internal and
+            external data to create the assumptions used to build their
+            forecasts, budgets, and plans. Still, today&apos;s businesses,
+            Barnes notes, are dealing with a deluge of data that continues to
             accelerate.
           </Text>
+
           <Text>
             “More data is great, but it also means more complexity, and static
-            tools run out of usefulness when there is more data and complexity
+            tools aren&apos;t useful when there is more data and complexity
             involved. It becomes a question of are you able to manage it or are
             you drowning in it?” he said.
-          </Text>
-          <Text>
-            Anaplan helps solve the data problem by housing company data and
-            third-party data — like distributor shipments and inventory levels —
-            in a single environment that users across a business and their
-            trading partners can access at the same time. With a constant flow
-            of real-time data, organizations can build more predictive models
-            and make more accurate assumptions, turning the data deluge into a
-            competitive advantage.
           </Text>
         </RightSideBlock>
 
@@ -217,25 +191,31 @@ function Page() {
           />
           {/* <VimeoPlayer autoplayScroll videoID="350988305" /> */}
           <Text>
-            “More data is great, but it also means more complexity, and static
-            tools run out of usefulness when there is more data and complexity
-            involved. It becomes a question of are you able to manage it or are
-            you drowning in it?” he said.
+            &quot;Many executives don&apos;t understand the problem with
+            disparate planning in Excel or are too far from the details to know
+            how to improve. By the time they get their information, it looks
+            pretty, but it&apos;s often outdated, inconsistent, and
+            disconnected.&quot;
+          </Text>
+          <Text>
+            Instead, transparency and confidence in data received from across
+            the company enables decisive resource allocation, clarity on drivers
+            and can positively impact results and earnings guidance.
           </Text>
           <Text>
             Anaplan helps solve the data problem by housing company data and
             third-party data — like distributor shipments and inventory levels —
             in a single environment that users across a business and their
-            trading partners can access at the same time. With a constant flow
-            of real-time data, organizations can build more predictive models
-            and make more accurate assumptions, turning the data deluge into a
-            competitive advantage.
+            partners can access simultaneously. With a constant flow of
+            real-time data, organizations can build more predictive models and
+            make more accurate assumptions, turning the data deluge into a
+            competitive advantage that helps them win in the market.
           </Text>
         </Block>
 
         <SectionHero
           className="section2"
-          title={() => "Turning data overload into a data goldmine "}
+          title={() => "The age of artificial intelligence"}
           subTitle=""
           backgroundImage={{
             desktop: "http://localhost:8080/images/h2.jpg",
@@ -255,18 +235,18 @@ function Page() {
         />
         <Block>
           <Text dropCap>
-            Victor also emphasizes the importance of intelligence in future
-            business operations. “The power of AI and ML algorithms is they
+            Barnes also emphasizes the importance of intelligence in future
+            business operations. &quot;The power of AI and ML algorithms is they
             learn from the data you feed them, that requires end-to-end data
-            visibility. Anaplan gives you the opportunity to connect valuable
-            data from source to user and then leverage that data in your
-            planning and forecasting for greater accuracy.”
+            visibility. Anaplan allows you to connect valuable data from source
+            to user and then leverage that data in your planning and forecasting
+            for greater accuracy.&quot;
           </Text>
           <Text>
             The company recently introduced PlanIQ, an intelligence framework
             that gives customers advanced AI and ML capabilities for predictive
-            forecasting, and is working with public cloud partners like Google
-            Cloud and AWS to integrate additional intelligence features with its
+            forecasting, and works with public cloud partners like Google Cloud
+            and AWS to integrate additional intelligence features with its
             platform.
           </Text>
         </Block>
@@ -304,38 +284,31 @@ function Page() {
               </p>
               <hr />
               <p>
-                &quot;You can’t just plan and walk away; you have to be able to
-                manage change and scenarios and identify levers that will help
-                you pivot and adapt.&quot;
+                &quot;You can&apos;t just plan and walk away; you have to be
+                able to manage change and identify levers that will help you
+                pivot and adapt.&quot;
               </p>
             </div>
           )}
         >
           <Text dropCap>
-            Victor notes that a business’s value chain can largely be broken
-            down into primary activities, like operations, logistics and sales,
-            and secondary activities, like R&D, hiring and procurement.
+            Barnes notes that a business&apos;s value chain can essentially be
+            broken down into primary activities, like operations, logistics,
+            sales, and secondary activities, like R&amp;D, hiring, and
+            procurement.
           </Text>
           <Text>
             By breaking down silos and making it easier to access complex data,
-            Anaplan, he believes, enables those leaders responsible for each
-            activity to work together more effectively to optimize processes,
-            reduce costs and drive higher profits.
+            Anaplan enables leaders for each area to work together more
+            effectively to optimize processes, reduce costs and drive higher
+            profits.
           </Text>
           <Text>
-            “Anaplan connects the critical pieces of your business so you can
-            unlock new opportunities. Whether it’s workforce planning
-            optimization, M&A, commercializing new products or finding new
-            routes to market the platform can help you prosper in the sea of
-            change we find ourselves in,” Barnes said.
-          </Text>
-          <Text>
-            This is especially prescient following the shocks of the pandemic,
-            which he explained has called into question the idea of annual
-            operating plans. “Companies should now realize the importance of
-            having the right data at the right time. You can’t just plan and
-            walk away; you have to be able to manage change and scenarios and
-            identify levers that will help you pivot and adapt.”
+            &quot;Anaplan connects the critical pieces of your business so you
+            can unlock new opportunities. Whether it&apos;s workforce planning
+            optimization, M&amp;A, commercializing new products, or finding new
+            routes to market, the platform can help you prosper in the sea of
+            change we find ourselves in,&quot; Barnes said.
           </Text>
         </RightSideBlock>
 
@@ -350,19 +323,21 @@ function Page() {
           />
           {/* <VimeoPlayer autoplayScroll videoID="350988305" /> */}
           <Text>
-            “More data is great, but it also means more complexity, and static
-            tools run out of usefulness when there is more data and complexity
-            involved. It becomes a question of are you able to manage it or are
-            you drowning in it?” he said.
+            This is especially prescient following the shocks of the pandemic,
+            which he explains has called into question the idea of annual
+            operating plans. &quot;Companies should now realize the importance
+            of having the right data at the right time. You can&apos;t just plan
+            and walk away; you have to be able to manage change and identify
+            levers that will help you pivot and adapt.&quot;
           </Text>
           <Text>
-            Anaplan helps solve the data problem by housing company data and
-            third-party data — like distributor shipments and inventory levels —
-            in a single environment that users across a business and their
-            trading partners can access at the same time. With a constant flow
-            of real-time data, organizations can build more predictive models
-            and make more accurate assumptions, turning the data deluge into a
-            competitive advantage.
+            In less than 18 months, the McDonald&apos;s division became a model
+            team within The Coca-Cola Company by creating one global view of a
+            business spanning 105 countries and 20 currencies. Individuals
+            across the division were able to increase their contributions to the
+            company by diagnosing a wide range of scenarios quickly and
+            accurately, responding to shifting priorities confidently, and
+            delivering on the company&apos;s most important objectives.
           </Text>
         </Block>
       </Section>
@@ -388,56 +363,64 @@ function Page() {
           titleUppercased={false}
         />
         <Block>
-          <Title addDivider={false}>Groupon</Title>
+          <Title addDivider={false}>Del Monte</Title>
           <Text>
-            When Groupon began using Anaplan in 2013 the fast-paced company was
-            trying to unlock efficiencies in their finance department, where
-            offline spreadsheets made it difficult to create precise forecasts
-            and reports.
+            Before Anaplan, global foods company Del Monte was using a mix of
+            hundreds of giant spreadsheets and inflexible legacy tools to manage
+            their financial planning and supply chain processes. The process was
+            slow, and averages were often used, which lead to discrepancies
+            between forecasts and actual costs.
           </Text>
           <Text>
-            Today the company has over 20 Anaplan use cases, including an
-            innovative Master Data Management model that touches workforce,
-            general ledger, vendor information and financial data, and more than
-            150 Anaplan users globally. Groupon’s finance team leverages Anaplan
-            to model, analyze and report valuable insights related to key
-            financial documents and outlooks, from Groupon’s income statement to
-            its balance sheet.
+            By bringing on Anaplan, Del Monte integrated finance and supply
+            chain planning processes, allowing its finance teams to evaluate
+            product costs and complete profitability analysis accurately.
           </Text>
           <Text>
-            Megan Carrozza, Groupon’s Senior Finance Manager, explained Anaplan
-            has benefited the entire company, cutting down time spent on mundane
-            tasks and making plans, forecasts and budgets more accurate. “The
-            power of Anaplan to apply automation and standardization to a
-            fast-moving company like Groupon is really powerful,” Carrozza
-            added.
+            The integration has also empowered Del Monte to anticipate, predict,
+            and accommodate market changes in real-time. For example, because of
+            El Nino, Del Monte struggled to prioritize product allocation. But
+            now, with Anaplan, they can run real-time scenarios and see what
+            areas may not be profitable and report this back to their sales,
+            channel sales, and logistic teams to adjust strategy.
+          </Text>
+          <Text>
+            &quot;It used to take us five days to react to demand changes. Now,
+            with Anaplan, it takes us less than five minutes to come up with the
+            necessary adjustments in production,&quot; said RK Del Rosario,
+            supply chain planning senior manager at Del Monte. &quot;It used to
+            take us five days to react to demand changes. Now, with Anaplan, it
+            takes us less than five minutes to come up with the necessary
+            adjustments in production,&quot; said RK Del Rosario, supply chain
+            planning senior manager at Del Monte.
           </Text>
 
           <Title addDivider={false}>Hitachi</Title>
           <Text>
             The Brake Business Unit at Hitachi Automotive Systems leverages
-            Anaplan to capture data automatically in connected models across
-            sales, capacity, purchasing, resource, and financial plans.
+            Anaplan to capture data automatically in models that span and
+            connect sales, capacity, purchasing, resource, and financial plans.
           </Text>
           <Text>
-            The company’s long product development cycles mean a clear view of
-            the future is critical, which puts pressure on the accuracy, and
-            fluidity of plans. Anaplan replaced a system of manual spreadsheets
-            and databases, and is now integral to helping the Brake Business
-            Unit decide which new projects and contracts they can win and how
-            much they will sell.
+            The company&apos;s extended product development cycles mean a clear
+            view of the future is critical, which puts pressure on plans&apos;
+            accuracy and fluidity. Anaplan replaced a system of manual
+            spreadsheets and databases and is crucial to the Brake Business Unit
+            knowing which new projects and contracts they can win and how much
+            they will sell.
           </Text>
           <Text>
-            From forecasting sales volumes years into the future, to calculating
-            the costs of raw materials and planning the right headcount, Anaplan
-            enables the company to easily monitor and manage its business from
-            sales to cash, giving leaders a clear view of the entire business
-            for more strategic and agile decision-making.
+            From forecasting sales volumes years into the future, calculating
+            the costs of raw materials, and planning the correct headcount,
+            Anaplan enables the company to easily monitor and manage its
+            business from sales to cash, giving leaders a clear view of the
+            entire business for more strategic and agile decision-making.
           </Text>
           <Text>
-            Augustin Fabre, Controller, Brake Business Unit, said: “We now have
-            a much clearer view of the future. If something changes on a
-            project, everyone knows it immediately and can respond quickly.”
+            Augustin Fabre, Controller, Brake Business Unit, said: &quot;We now
+            have a much clearer view of the future. If something changes on a
+            project, everyone knows it immediately and can respond
+            quickly.&quot;
           </Text>
         </Block>
       </Section>
@@ -463,24 +446,22 @@ function Page() {
             copy={() => (
               <div>
                 <p>
-                  Arcu non sodales neque sodales. Tincidunt praesent semper
-                  feugiat nibh sed pulvinar proin. Vehicula ipsum a arcu cursus
-                  vitae congue. A erat nam at lectus urna. Varius sit amet
-                  mattis vulputate enim nulla aliquet porttitor. Non diam
-                  phasellus vestibulum lorem.
-                </p>
-                <p>
-                  Tristique senectus et netus et. Gravida rutrum quisque non
-                  tellus orci ac auctor augue mauris. Etiam erat velit
-                  scelerisque in dictum non consectetur a erat. Turpis egestas
-                  maecenas pharetra convallis posuere morbi leo urna molestie.
+                  Anaplan, Inc. (NYSE: PLAN) is a cloud-native enterprise SaaS
+                  company helping global enterprises orchestrate business
+                  performance. Leaders across industries rely on our
+                  platform—powered by our proprietary Hyperblock® technology—to
+                  connect teams, systems, and insights from across their
+                  organizations to continuously adapt to change, transform how
+                  they operate, and reinvent value creation. Based in San
+                  Francisco, Anaplan has over 175 partners and more than 1,600
+                  customers worldwide.
                 </p>
               </div>
             )}
             outColor="white"
             overColor="#95C0F5"
             ctaText="Find out More"
-            ctaLink="https://www.anaplan.com/why-anaplan/"
+            ctaLink="https://www.anaplan.com/"
           />
         </Block>
       </Section>

@@ -56,14 +56,14 @@ const Content = styled.div`
   }
 `;
 
-// const Overlay = styled.div`
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-//   position: absolute;
-//   background: ${(props) => props.overlayColor};
-// `;
+const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: ${(props) => props.overlayColor};
+`;
 
 const Divider = styled.hr`
   border-style: solid;
@@ -102,7 +102,7 @@ const Copy = styled.div`
 
 const Logo = styled.img`
   position: relative;
-  margin-top:0!important;
+  margin-top: 0 !important;
   max-width: ${(props) => props.maxWidth};
   @media (min-width: ${breakpoints.mobile}) {
     width: auto;
@@ -130,7 +130,7 @@ const BackgroundVideo = styled.div`
   background: transparent;
 `;
 const More = styled.div`
-  color: #0B2265;
+  color: #0b2265;
   position: absolute;
   bottom: 2rem;
   display: flex;
@@ -138,24 +138,24 @@ const More = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size:4rem;
+  font-size: 4rem;
 `;
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
-  min-height:600px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
 `;
 const ContentWrapper = styled.div`
-  max-width:680px;
+  max-width: 680px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  bottom:20%;
-  position:absolute;
+  bottom: 20%;
+  position: absolute;
 `;
 
 let timeout = null; // out of the render scope to avoid reseting this variable on each render
@@ -231,10 +231,10 @@ export default function SimpleHero(props) {
           />
         </BackgroundVideo>
       )}
-      {/* <Overlay
+      <Overlay
         overlayColor={props.overlayColor}
         className={props.className ? props.className + "__overlay" : ""}
-      /> */}
+      />
       <ContentContainer
         className={
           props.className ? props.className + "__content__container" : ""
@@ -272,12 +272,12 @@ export default function SimpleHero(props) {
             {props.subTitle && (
               <SubTitle ref={refSubTitle}>{props.subTitle}</SubTitle>
             )}
-             {props.addDivider && (
+            {props.addDivider && (
               <Divider
                 ref={refDevider}
                 dividerColor={layout.colors[props.dividerColor]}
               />
-            )} 
+            )}
             <Copy ref={refCopy}>{props.copy()}</Copy>
           </Content>
         </ContentWrapper>
