@@ -272,6 +272,7 @@ function Page() {
           titleUppercased={false}
         />
         <RightSideBlock
+          style={{ marginBottom: 0 }}
           sideContent={() => (
             //           <Quote>
             //           Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -312,7 +313,7 @@ function Page() {
           </Text>
         </RightSideBlock>
 
-        <Block>
+        <Block style={{ paddingTop: "1rem" }}>
           <Image
             source={{
               desktop: "http://localhost:8080/images/h5.jpg",
