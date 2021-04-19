@@ -395,7 +395,16 @@ function Page() {
             adjustments in production,&quot; said RK Del Rosario, supply chain
             planning senior manager at Del Monte.
           </Text>
-
+          <Text>
+            To discover more about how Anaplan has been helping Hitachi{" "}
+            <a
+              href="https://www.anaplan.com/customers/del-monte/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              click here.
+            </a>
+          </Text>
           <Title addDivider={false}>Hitachi</Title>
           <Text>
             The Brake Business Unit at Hitachi Automotive Systems leverages
@@ -422,6 +431,16 @@ function Page() {
             have a much clearer view of the future. If something changes on a
             project, everyone knows it immediately and can respond
             quickly.&quot;
+          </Text>
+          <Text>
+            To discover more about how Anaplan has been helping Hitachi{" "}
+            <a
+              href="https://www.anaplan.com/customers/hitachi-brakes/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              click here.
+            </a>
           </Text>
         </Block>
       </Section>
