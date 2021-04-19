@@ -19,8 +19,8 @@ const Container = styled.div`
 `;
 const ImageContainer = styled(Container)`
   background-size: cover;
-  height:auto;
-  margin-bottom:-10px;
+  height: auto;
+  margin-bottom: -10px;
   background-position: center;
   background-image: url(${(props) => props.backgroundImage.mobile});
   @media (min-width: ${breakpoints.mobile}) {
@@ -30,7 +30,6 @@ const ImageContainer = styled(Container)`
     background-image: url(${(props) => props.backgroundImage.desktop});
   }
 `;
-
 
 const Content = styled.div`
   p,
@@ -48,7 +47,6 @@ const Title = styled.h4`
 `;
 
 const CTA = styled.a`
-  color: black;
   background-color: ${(props) => props.outColor};
   padding: 0.5rem 3rem;
   display: block;
@@ -56,10 +54,12 @@ const CTA = styled.a`
   @media (min-width: ${breakpoints.mobile}) {
     display: inline-block;
   }
+  color: black !important;
   font-weight: bold;
   text-decoration: none;
   &:hover {
     background-color: ${(props) => props.overColor};
+    color: black !important;
   }
 `;
 const Logo = styled.img`
@@ -103,15 +103,13 @@ export default function SimpleBoilerPlate(props) {
 
   const ContainerComponent = props.backgroundImage ? ImageContainer : Container;
 
-
   return (
     <ContainerComponent
-    backgroundImage={props.backgroundImage}
-    className={props.className}
-    backgroundColor={props.backgroundColor}
-    style={props.style}
-  >
-
+      backgroundImage={props.backgroundImage}
+      className={props.className}
+      backgroundColor={props.backgroundColor}
+      style={props.style}
+    >
       <Content copyColor={props.copyColor}>
         {props.companyLogoURL && (
           <Logo ref={refLogo} src={props.companyLogoURL} />
@@ -136,18 +134,18 @@ SimpleBoilerPlate.defaultProps = {
   companyLogoURL: "",
   backgroundColor: "transparent",
   copyColor: "inherit",
-  outColor:"white"
+  outColor: "white",
 };
 
 SimpleBoilerPlate.propTypes = {
-   /**
+  /**
    * Responsive background image this can be differen aspect ratios per screen sizes
    */
-    backgroundImage: PropTypes.shape({
-      mobile: PropTypes.string,
-      tablet: PropTypes.string,
-      desktop: PropTypes.string,
-    }),
+  backgroundImage: PropTypes.shape({
+    mobile: PropTypes.string,
+    tablet: PropTypes.string,
+    desktop: PropTypes.string,
+  }),
   outColor: PropTypes.string,
   /**
    * React CSS format styles override
