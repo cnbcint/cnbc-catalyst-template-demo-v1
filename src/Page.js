@@ -478,7 +478,7 @@ function Page() {
             )}
             outColor="white"
             overColor="#95C0F5"
-            ctaText="Find out More"
+            ctaText="Find out more"
             ctaLink="https://www.anaplan.com/"
           />
         </Block>
