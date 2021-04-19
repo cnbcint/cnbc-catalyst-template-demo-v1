@@ -26,7 +26,7 @@ function Page() {
             "How Anaplan brings agility and insight into business planning"
           }
           copyColor="#0B2265"
-          overlayColor="rgba(255,255,255,0.5)"
+          overlayColor="rgba(255,255,255,0)"
           companyLogoURL="http://localhost:8080/images/logo.svg"
           companyLogoAligment="left"
           companyLogoMaxWidth="200px"
@@ -36,9 +36,9 @@ function Page() {
           copyMaxWidth="600px"
           // copyMaxWidth={Theme.maxWidth}
           backgroundImage={{
-            desktop: "http://localhost:8080/images/heroanaplan2.jpg",
-            tablet: "http://localhost:8080/images/heroanaplan2.jpg",
-            mobile: "http://localhost:8080/images/heroanaplan2.jpg",
+            desktop: "http://localhost:8080/images/header-desktop.jpg",
+            tablet: "http://localhost:8080/images/header-desktop.jpg",
+            mobile: "http://localhost:8080/images/header-desktop.jpg",
           }}
           alt="Alt Text"
           titleUppercased={false}
