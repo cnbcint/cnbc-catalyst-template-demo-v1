@@ -19,7 +19,8 @@ const Container = styled.div`
 `;
 const Side = styled.div`
   width: 80%;
-  font-weight: bold;
+  font-family:"Proxima Nova"!important;
+  font-weight: 700!important;
   font-size: 1.4rem;
   line-height: 110%;
   p::first-letter {

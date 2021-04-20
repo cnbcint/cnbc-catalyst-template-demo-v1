@@ -83,7 +83,7 @@ const Divider = styled.div`
 const Title = styled.h1`
   font-size: 1.8rem;
   line-height: 100%;
-  font-weight: bold;
+  font-weight: 700!important;
   display: inline-block !important;
   width: 100%;
   text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
