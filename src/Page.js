@@ -135,12 +135,14 @@ function Page() {
             // ut labore et dolore magna aliqua.
             //           </Quote>
             <div>
-              <p>
-                &quot;More data is great, but it also means more complexity, and
-                static tools aren&apos;t useful when there is more data and
-                complexity involved. It becomes a question of are you able to
-                manage it or are you drowning in it?&quot;
-              </p>
+              <strong>
+                <p>
+                  &quot;More data is great, but it also means more complexity,
+                  and static tools aren&apos;t useful when there is more data
+                  and complexity involved. It becomes a question of are you able
+                  to manage it or are you drowning in it?&quot;
+                </p>
+              </strong>
               <hr />
               <p>
                 {/* create component for simple quotes */}
@@ -279,16 +281,18 @@ function Page() {
             // ut labore et dolore magna aliqua.
             //           </Quote>
             <div>
-              <p>
-                &quot;Companies should now realize the importance of having the
-                right data at the right time.&quot;
-              </p>
-              <hr />
-              <p>
-                &quot;You can&apos;t just plan and walk away; you have to be
-                able to manage change and identify levers that will help you
-                pivot and adapt.&quot;
-              </p>
+              <strong>
+                <p>
+                  &quot;Companies should now realize the importance of having
+                  the right data at the right time.&quot;
+                </p>
+                <hr />
+                <p>
+                  &quot;You can&apos;t just plan and walk away; you have to be
+                  able to manage change and identify levers that will help you
+                  pivot and adapt.&quot;
+                </p>
+              </strong>
             </div>
           )}
         >

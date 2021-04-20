@@ -5,11 +5,7 @@ import useAnimation from "../hooks/useAnimation";
 import useContainerSize from "../hooks/useContainerSize";
 import VimeoPlayer from "../components/VimeoPlayer";
 import { LayoutContext } from "./Main";
-import {
-  breakpoints,
-  getAnimation,
-  getMargin,
-} from "../helpers/Layout";
+import { breakpoints, getAnimation, getMargin } from "../helpers/Layout";
 
 const Container = styled.div`
   display: flex;
@@ -29,8 +25,8 @@ const Container = styled.div`
 
 const ImageContainer = styled(Container)`
   background-size: cover;
-  height:auto;
-  margin-bottom:-10px;
+  height: auto;
+  margin-bottom: -10px;
   background-position: center;
   background-image: url(${(props) => props.backgroundImage.mobile});
   @media (min-width: ${breakpoints.mobile}) {
@@ -83,10 +79,11 @@ const Divider = styled.div`
 const Title = styled.h1`
   font-size: 1.8rem;
   line-height: 100%;
-  font-weight: 700!important;
+  font-weight: 700 !important;
   display: inline-block !important;
   width: 100%;
   text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
+  font-family: "Proxima Nova", sans-serif;
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 3.5rem;
   }
@@ -97,6 +94,7 @@ const SubTitle = styled.h2`
   line-height: 120%;
   font-weight: bold;
   color: ${(props) => props.copyColor};
+  font-family: 'Proxima Nova', sans-serif;
   // text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 2rem;
@@ -107,7 +105,6 @@ const Copy = styled.div`
   font-size: 1rem;
   line-height: 1.4rem;
 `;
-
 
 const BackgroundVideo = styled.div`
   width: 100%;
@@ -122,7 +119,7 @@ const BackgroundVideo = styled.div`
 const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
-  min-height:600px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   flex-direction: column;
