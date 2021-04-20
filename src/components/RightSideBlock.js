@@ -23,6 +23,7 @@ const Side = styled.div`
   font-weight: 700!important;
   font-size: 1.4rem;
   line-height: 110%;
+  font-family: "Proxima Nova", sans-serif;
   p::first-letter {
     margin-left: -10px;
   }

@@ -81,6 +81,7 @@ const Title = styled.h1`
   display: inline-block !important;
   width: 100%;
   text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
+  font-family: "Proxima Nova", sans-serif;
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 3.5rem;
   }
