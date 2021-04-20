@@ -154,7 +154,10 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  bottom: 20%;
+  bottom: 30%;
+  @media (min-width: ${breakpoints.mobile}) {
+    bottom: 20%;
+  }
   position: absolute;
 `;
 
