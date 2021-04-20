@@ -19,11 +19,11 @@ const Container = styled.div`
 `;
 const Side = styled.div`
   width: 80%;
-  font-weight:bold;
-  font-size:1.7rem;
-  line-height:110%;
-  p::first-letter{
-    margin-left:-10px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 110%;
+  p::first-letter {
+    margin-left: -10px;
   }
   box-sizing: border-box;
   @media (min-width: ${breakpoints.tablet}) {
@@ -34,14 +34,14 @@ const Side = styled.div`
   }
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 600px;
-    margin:0 auto;
-    width:100%;
+    margin: 0 auto;
+    width: 100%;
   }
 `;
 const Content = styled.div`
   width: 100%;
   max-width: 600px;
-  margin-left:calc(76.45% - 600px);
+  margin-left: calc(76.45% - 600px);
   display: flex;
   flex-direction: column;
   flex-shrink: 1;
@@ -50,8 +50,8 @@ const Content = styled.div`
   }
   @media (max-width: ${breakpoints.tablet}) {
     max-width: 600px;
-    margin:0 auto;
-    padding:0;
+    margin: 0 auto;
+    padding: 0;
   }
 `;
 const Wrapper = styled.div`
