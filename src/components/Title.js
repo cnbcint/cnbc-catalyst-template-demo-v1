@@ -17,8 +17,10 @@ const Container = styled.div`
   }
 `;
 const TH2 = styled.h2`
-  font-size: 2rem;
-  margin-bottom: ${getMargin(2)};
+  font-size: 1.6rem;
+  @media (min-width: ${breakpoints.mobile}) {
+    font-size: 22rem;
+  }
 `;
 const TH3 = styled.h3`
   font-size: 1.8rem;
