@@ -5,7 +5,7 @@ import { breakpoints } from "../helpers/Layout";
 const Container = styled.div`
   z-index: 200;
   width: 100%;
-  top: ${(props) => (props.stick ? "0" : "auto")};
+  top: ${(props) => (props.stick ? "50px" : "auto")};
   @media (min-width: ${breakpoints.mobile}) {
     top: ${(props) => (props.stick ? "95px" : "auto")};
   }
