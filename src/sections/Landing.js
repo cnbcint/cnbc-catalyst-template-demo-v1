@@ -30,7 +30,7 @@ const Container = styled.div`
 
 const ImageContainer = styled(Container)`
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-image: url(${(props) => props.backgroundImage.mobile});
   @media (min-width: ${breakpoints.mobile}) {
     background-image: url(${(props) => props.backgroundImage.tablet});
