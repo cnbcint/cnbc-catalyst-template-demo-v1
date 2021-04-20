@@ -19,7 +19,7 @@ const Container = styled.div`
 const TH2 = styled.h2`
   font-size: 1.6rem;
   @media (min-width: ${breakpoints.mobile}) {
-    font-size: 22rem;
+    font-size: 2rem;
   }
 `;
 const TH3 = styled.h3`
