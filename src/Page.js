@@ -239,10 +239,10 @@ function Page() {
           <Text dropCap>
             Barnes also emphasizes the importance of intelligence in future
             business operations. &quot;The power of AI and ML algorithms is they
-            learn from the data you feed them, and that, requires end-to-end
-            data visibility. Anaplan allows you to connect valuable data from
-            source to user and then leverage that data in your planning and
-            forecasting for greater accuracy.&quot;
+            learn from the data you feed them, and that requires end-to-end data
+            visibility. Anaplan allows you to connect valuable data from source
+            to user and then leverage that data in your planning and forecasting
+            for greater accuracy.&quot;
           </Text>
           <Text>
             The company recently introduced PlanIQ, an intelligence framework
