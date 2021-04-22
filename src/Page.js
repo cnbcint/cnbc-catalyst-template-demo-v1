@@ -239,10 +239,10 @@ function Page() {
           <Text dropCap>
             Barnes also emphasizes the importance of intelligence in future
             business operations. &quot;The power of AI and ML algorithms is they
-            learn from the data you feed them, that requires end-to-end data
-            visibility. Anaplan allows you to connect valuable data from source
-            to user and then leverage that data in your planning and forecasting
-            for greater accuracy.&quot;
+            learn from the data you feed them, and that, requires end-to-end
+            data visibility. Anaplan allows you to connect valuable data from
+            source to user and then leverage that data in your planning and
+            forecasting for greater accuracy.&quot;
           </Text>
           <Text>
             The company recently introduced PlanIQ, an intelligence framework
@@ -373,7 +373,7 @@ function Page() {
             Before Anaplan, global foods company Del Monte was using a mix of
             hundreds of giant spreadsheets and inflexible legacy tools to manage
             their financial planning and supply chain processes. The process was
-            slow, and averages were often used, which lead to discrepancies
+            slow, and averages were often used, which led to discrepancies
             between forecasts and actual costs.
           </Text>
           <Text>
@@ -393,11 +393,7 @@ function Page() {
             &quot;It used to take us five days to react to demand changes. Now,
             with Anaplan, it takes us less than five minutes to come up with the
             necessary adjustments in production,&quot; said RK Del Rosario,
-            supply chain planning senior manager at Del Monte. &quot;It used to
-            take us five days to react to demand changes. Now, with Anaplan, it
-            takes us less than five minutes to come up with the necessary
-            adjustments in production,&quot; said RK Del Rosario, supply chain
-            planning senior manager at Del Monte.
+            supply chain planning senior manager at Del Monte.
           </Text>
           <div className="anaplan__cta">
             <a
