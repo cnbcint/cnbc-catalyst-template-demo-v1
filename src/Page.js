@@ -92,7 +92,7 @@ function Page() {
             “It transformed the performance of the McDonald&apos;s division and
             will drive future performance across the organization.”
           </Text>
-          <div className="anaplan__cta">
+          <div className="anaplan__cta anaplan__cta--quote">
             <a
               href="https://www.anaplan.com/resources/webinars/the-power-of-collaborative-planning-at-the-mcdonalds-division-the-coca-cola-company/"
               target="_blank"
@@ -188,7 +188,7 @@ function Page() {
             Lorem Ipsum 1
           </Title>
           <Text dropCap>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque. Quis hendrerit dolor magna eget est. Lobortis mattis aliquam faucibus purus in. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Tincidunt arcu non sodales neque. Tellus id interdum velit laoreet id donec ultrices. In nulla posuere sollicitudin aliquam. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. In massa tempor nec feugiat nisl pretium fusce id. Semper viverra nam libero justo laoreet sit amet cursus. Arcu non sodales neque sodales. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Vehicula ipsum a arcu cursus vitae congue. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut labore et dolore magna aliqua. Venenatis urna cursus eget nunc scelerisque. Quis hendrerit dolor magna eget est. Lobortis mattis aliquam faucibus purus in. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Tincidunt arcu non sodales neque. Tellus id interdum velit laoreet id donec ultrices. In nulla posuere sollicitudin aliquam. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. In massa tempor nec feugiat nisl pretium fusce id. Semper viverra nam libero justo laoreet sit amet cursus. Arcu non sodales neque sodales. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Vehicula ipsum a arcu cursus vitae congue.
           </Text> */}
           <Image
             source={{
