@@ -92,6 +92,15 @@ function Page() {
             “It transformed the performance of the McDonald&apos;s division and
             will drive future performance across the organization.”
           </Text>
+          <div className="anaplan__cta">
+            <a
+              href="https://www.anaplan.com/resources/webinars/the-power-of-collaborative-planning-at-the-mcdonalds-division-the-coca-cola-company/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Find out more
+            </a>
+          </div>
         </Block>
 
         <StickyBar>
