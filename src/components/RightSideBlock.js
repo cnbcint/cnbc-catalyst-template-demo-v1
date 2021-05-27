@@ -19,9 +19,9 @@ const Container = styled.div`
 `;
 const Side = styled.div`
   width: 80%;
-  font-weight: bold;
   font-size: 1.4rem;
   line-height: 110%;
+  font-family: "Proxima Nova", sans-serif;
   p::first-letter {
     margin-left: -10px;
   }
@@ -36,6 +36,10 @@ const Side = styled.div`
     max-width: 600px;
     margin: 0 auto;
     width: 100%;
+  }
+  p {
+    font-family:"Proxima Nova"!important;
+    font-weight: 700!important;
   }
 `;
 const Content = styled.div`

@@ -30,7 +30,7 @@ const Container = styled.div`
 
 const ImageContainer = styled(Container)`
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-image: url(${(props) => props.backgroundImage.mobile});
   @media (min-width: ${breakpoints.mobile}) {
     background-image: url(${(props) => props.backgroundImage.tablet});
@@ -81,6 +81,7 @@ const Title = styled.h1`
   display: inline-block !important;
   width: 100%;
   text-transform: ${(props) => (props.uppercased ? "uppercase" : "none")};
+  font-family: "Proxima Nova", sans-serif;
   @media (min-width: ${breakpoints.mobile}) {
     font-size: 3.5rem;
   }
@@ -154,7 +155,10 @@ const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  bottom: 20%;
+  bottom: 30%;
+  @media (min-width: ${breakpoints.mobile}) {
+    bottom: 20%;
+  }
   position: absolute;
 `;
 
