@@ -93,11 +93,7 @@ function Page() {
             will drive future performance across the organization.”
           </Text>
           <div className="anaplan__cta anaplan__cta--quote">
-            <a
-              href="https://www.anaplan.com/resources/webinars/the-power-of-collaborative-planning-at-the-mcdonalds-division-the-coca-cola-company/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="http://apln.co/zosmp3" target="_blank" rel="noreferrer">
               Find out more
             </a>
           </div>
@@ -405,11 +401,7 @@ function Page() {
             supply chain planning senior manager at Del Monte.
           </Text>
           <div className="anaplan__cta">
-            <a
-              href="https://www.anaplan.com/customers/del-monte/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="http://apln.co/c4r13q" target="_blank" rel="noreferrer">
               Find out more
             </a>
           </div>
@@ -441,11 +433,7 @@ function Page() {
             quickly.&quot;
           </Text>
           <div className="anaplan__cta">
-            <a
-              href="https://www.anaplan.com/customers/hitachi-brakes/"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="http://apln.co/measej" target="_blank" rel="noreferrer">
               Find out more
             </a>
           </div>
@@ -488,7 +476,7 @@ function Page() {
             outColor="white"
             overColor="#95C0F5"
             ctaText="Find out more"
-            ctaLink="https://www.anaplan.com/"
+            ctaLink="http://apln.co/rdbcf7"
           />
         </Block>
       </Section>
